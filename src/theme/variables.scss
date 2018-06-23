@@ -34,7 +34,8 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
+  // primary:    #488aff,
+  primary:    #e62325,
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
@@ -46,6 +47,10 @@ $colors: (
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
+$toolbar-background:#e62325; //set global toolbar background color
+$toolbar-ios-title-text-color:#ffffff;
+$font-family-ios-base: "Helvetica Neue", "Roboto", sans-serif;
+
 
 
 
@@ -53,7 +58,9 @@ $colors: (
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
+$background-md-color: #ffffff;
+$toolbar-md-background: #e62325;
+$toolbar-md-title-text-color: #ffffff;
 
 
 // App Windows Variables
