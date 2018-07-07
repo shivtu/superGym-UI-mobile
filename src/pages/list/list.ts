@@ -15,7 +15,11 @@ export class ListPage {
     // this.selectedItem = navParams.get('item');
     this.menuCtrl.enable(true, 'login');
   }
-  close(){
-    alert('admin role active');
+  admin(){
+    alert('redirecting to admin page');
+  }
+
+  trainer(){
+    alert('redirecting to trainer page');
   }
 }

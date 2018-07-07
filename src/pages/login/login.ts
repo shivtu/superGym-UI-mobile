@@ -34,7 +34,7 @@ export class LoginPage {
     .then(authData=>{
       this.userAuth = JSON.parse(authData.data);
       if(authData.status === 200){
-        this.storage.set('userAuth', this.userAuth.token)
+        this.storage.set('userAuth', this.userAuth)
         .then(()=>{
           this.navCtrl.setRoot(HomePage);
         })
