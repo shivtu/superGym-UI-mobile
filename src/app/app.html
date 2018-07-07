@@ -8,17 +8,9 @@
   <ion-content style="background-color:#222; color: #ffffff">
     <ion-list style="background-color:#222; color: #ffffff">
         <ion-card>
-            <img src="img/nin-live.png"/>
-            <ion-card-content>
-              <ion-card-title>
-                Nine Inch Nails Live
-                </ion-card-title>
-              <p>
-                The most popular industrial group ever, and largely
-                responsible for bringing the music to a mass audience.
-              </p>
-            </ion-card-content>
-          </ion-card>
+          <img src="assets/imgs/superGym-avatar-1.jpeg" class="item item-thumbnail-left"/>
+          <button ion-button outline small full icon-end>New Image<ion-icon name="camera"></ion-icon></button>
+        </ion-card>
           
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" style="background-color:#222; color: #ffffff">
         <ion-icon [name]="p.icon" item-left></ion-icon>

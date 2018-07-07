@@ -1,12 +1,31 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Super-Gym-Login</ion-title>
+    <ion-title>Super Gym</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding style="background-image: url('assets/imgs/superGym-loginPage-1.jpg'); background-size: cover;">
-  <button ion-button (click)="signIn()">Sign-In</button><button ion-button>Sign-Up</button>
+  <button ion-button (click)="show_signIn_card()">Sign-In</button><button ion-button>Sign-Up</button>
+
+  <ion-card id="signIn-card">
+    <ion-card-header>
+      Sign In
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label floating>Phone Number</ion-label>
+        <ion-input type="number" [(ngModel)]="primary_phone"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <br/>
+      <button ion-button full (click)="signIn()">Log In</button>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
